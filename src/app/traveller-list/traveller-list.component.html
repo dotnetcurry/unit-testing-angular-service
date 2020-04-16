@@ -1,0 +1,11 @@
+
+<div *ngFor="let traveller of travellers">
+  <div> {{traveller.lastName}}, {{traveller.firstName}} is {{traveller.age}} years old.</div>
+  <div> City: {{traveller.city}}. Country: {{traveller.country}}</div>
+  <div><button (click)="deleteTraveller(traveller.id)">Delete</button></div>
+  <br />
+</div>
+
+<div *ngFor="let msg of messages">
+  <div> {{ msg }}</div>
+</div>
